@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARREIRA</title>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    País de origem: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="consultar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function consultar() {
+            let txtc = window.document.querySelector('input#txtnac')
+            let res = document.querySelector('div#res')
+            let nac = (txtc.value)
+            res.innerHTML = `<p>Seu país de origem é <strong>${nac}</strong>.</p>`
+            if (nac == 'Brasil') {
+                res.innerHTML += '<p>Você é <strong>Brasileiro!</strong></p>'
+            } else {
+                res.innerHTML += '<p>Você é <strong>Estrangeiro!</strong></p>'
+            }
+        }
+    </script>
+</body>
+</html>
