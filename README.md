@@ -1,3 +1,3 @@
-Curso em vídeo JavaScript
+<h1>Curso em vídeo JavaScript</h1>
 
-Arquivos do curso em vídeo do canal do youtube JavaScript.
+Arquivos criados durante o curso de JavaScript do canal Curso em vídeo (www.cursoemvideo.com/curso/javascript/)
